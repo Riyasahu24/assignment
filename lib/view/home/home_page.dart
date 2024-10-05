@@ -131,14 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Positioned(bottom: 0, child: bottomNav()),
           ],
-        )
-        //  IndexedStack(
-        //   index: selectedPos,
-        //   children: _homeChild,
-
-        // ),
-        // bottomNavigationBar: bottomNav(),
-        );
+        ));
   }
 
   Widget bottomNav() {
@@ -146,6 +139,7 @@ class _HomeScreenState extends State<HomeScreen> {
       tabItems,
       controller: _navigationController,
       selectedPos: selectedPos,
+      circleSize: 70,
       circleStrokeWidth: 0,
       animationDuration: const Duration(milliseconds: 200),
       selectedCallback: (int? selectedPos) {

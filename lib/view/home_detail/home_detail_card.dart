@@ -90,8 +90,8 @@ class _HomeCardState extends State<HomeCard> with TickerProviderStateMixin {
               height: 20,
             ),
             const StaySafeCard(),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: MediaQuery.of(context).size.height * .12,
             ),
           ],
         ),
