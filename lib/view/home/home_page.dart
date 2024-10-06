@@ -17,33 +17,33 @@ class _HomeScreenState extends State<HomeScreen> {
   int selectedPos = 2;
   late CircularBottomNavigationController _navigationController;
 
-  List<TabItem> tabItems = [
-    TabItem(
-      Icons.book_outlined,
-      "My Booking",
-      Colors.lightBlue,
-    ),
-    TabItem(
-      Icons.qr_code,
-      "Scan QR",
-      Colors.lightBlue,
-    ),
-    TabItem(
-      Icons.emoji_emotions,
-      "Home",
-      Colors.lightBlue,
-    ),
-    TabItem(
-      Icons.qr_code_scanner_outlined,
-      "My QR",
-      Colors.lightBlue,
-    ),
-    TabItem(
-      Icons.person,
-      "Profile",
-      Colors.lightBlue,
-    ),
-  ];
+  // List<TabItem> tabItems = [
+  //   TabItem(
+  //     'assets/images/vector_smart_object_5.png',
+  //     "My Booking",
+  //     Colors.lightBlue,
+  //   ),
+  //   TabItem(
+  //     'assets/images/vector_smart_object_8.png',
+  //     "Scan QR",
+  //     Colors.lightBlue,
+  //   ),
+  //   TabItem(
+  //     'assets/images/vector_smart_object_copy_3_2.png',
+  //     "Home",
+  //     Colors.lightBlue,
+  //   ),
+  //   TabItem(
+  //     'assets/images/shape_1.png',
+  //     "My QR",
+  //     Colors.lightBlue,
+  //   ),
+  //   TabItem(
+  //     'assets/images/ic_profile.png',
+  //     "Profile",
+  //     Colors.lightBlue,
+  //   ),
+  // ];
 
   static const List<Widget> _homeChild = [
     Center(child: Text('My Bookings')),
@@ -76,17 +76,17 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Colors.lightBlue.withOpacity(.1),
           scrolledUnderElevation: 0.3,
           elevation: 0,
-          title: const Row(
+          title: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Icon(
-                    Icons.location_on_outlined,
-                    color: Colors.lightBlue,
+                  Image.asset('assets/images/location.png'),
+                  const SizedBox(
+                    width: 4,
                   ),
-                  Text(
+                  const Text(
                     'Ny 11434, USA',
                     style: TextStyle(
                       fontSize: 12,
@@ -96,31 +96,24 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-              SizedBox(
-                width: 40,
+              const SizedBox(
+                width: 10,
               ),
-              Text(
-                "Walk-in",
-                style: TextStyle(fontSize: 30),
-              )
+              Image.asset(
+                'assets/images/ic_logo_color.png',
+                height: 40,
+                width: 150,
+              ),
             ],
           ),
-          actions: const [
-            Icon(
-              Icons.search,
-              size: 30,
-              color: Colors.black,
+          actions: [
+            Image.asset('assets/images/vector_smart_object_6.png'),
+            const SizedBox(
+              width: 16,
             ),
-            SizedBox(
-              width: 4,
-            ),
-            Icon(
-              Icons.notifications_none,
-              size: 30,
-              color: Colors.black,
-            ),
-            SizedBox(
-              width: 10,
+            Image.asset('assets/images/vector_smart_object_7.png'),
+            const SizedBox(
+              width: 16,
             ),
           ],
         ),
@@ -136,7 +129,38 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget bottomNav() {
     return CircularBottomNavigation(
-      tabItems,
+      [
+        TabItem(
+          'assets/images/vector_smart_object_5.png',
+          "My Booking",
+          Colors.lightBlue,
+          'assets/images/layer_16.png',
+        ),
+        TabItem(
+          'assets/images/vector_smart_object_8.png',
+          "Scan QR",
+          Colors.lightBlue,
+          'assets/images/group_3.png',
+        ),
+        TabItem(
+          'assets/images/vector_smart_object_copy_3_2.png',
+          "Home",
+          Colors.lightBlue,
+          'assets/images/vector_smart_object.png',
+        ),
+        TabItem(
+          'assets/images/shape_1.png',
+          "My QR",
+          Colors.lightBlue,
+          'assets/images/group_3.png',
+        ),
+        TabItem(
+          'assets/images/ic_profile.png',
+          "Profile",
+          Colors.lightBlue,
+          'assets/images/group_10.png',
+        ),
+      ],
       controller: _navigationController,
       selectedPos: selectedPos,
       circleSize: 70,

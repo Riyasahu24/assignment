@@ -36,14 +36,11 @@ class StaySafeCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              _buildColumn(
-                  'https://cdn-icons-png.flaticon.com/128/5756/5756931.png',
+              _buildColumn('assets/images/vector_smart_object_3.png',
                   'Always wear a mask'),
               _buildColumn(
-                  'https://cdn-icons-png.flaticon.com/128/3017/3017492.png',
-                  'Wash hand'),
-              _buildColumn(
-                  'https://cdn-icons-png.flaticon.com/128/2949/2949694.png',
+                  'assets/images/vector_smart_object_2.png', 'Wash hand'),
+              _buildColumn('assets/images/vector_smart_object_1.png',
                   'Keep distance with other person'),
             ],
           ),
@@ -56,10 +53,8 @@ class StaySafeCard extends StatelessWidget {
     return Expanded(
       child: Column(
         children: [
-          Image.network(
+          Image.asset(
             image,
-            height: 40,
-            width: 100,
           ),
           Text(
             title,

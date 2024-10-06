@@ -15,40 +15,39 @@ class CategoryCard extends StatelessWidget {
         children: const [
           _CategoryDesign(
             title: 'Saloon',
-            image: 'https://cdn-icons-png.flaticon.com/512/12772/12772533.png',
+            image: 'assets/images/saloon.png',
           ),
           _CategoryDesign(
             title: 'Retail',
-            image: 'https://cdn-icons-png.flaticon.com/512/8539/8539117.png',
+            image: 'assets/images/ic_retail.png',
           ),
           _CategoryDesign(
             title: 'Malls',
-            image: 'https://cdn-icons-png.flaticon.com/512/998/998718.png',
+            image: 'assets/images/mall.png',
           ),
           _CategoryDesign(
             title: 'Gym',
-            image:
-                'https://www.drawhipo.com/wp-content/uploads/2023/03/Gym-Color-2-Dumbbells-Curved.png',
+            image: 'assets/images/vector_smart_object_1_2.png',
           ),
           _CategoryDesign(
             title: 'Restaurant',
-            image: 'https://cdn-icons-png.flaticon.com/128/2944/2944515.png',
+            image: 'assets/images/vector_smart_object_copy_3.png',
           ),
           _CategoryDesign(
             title: 'Grocery',
-            image: 'https://cdn-icons-png.flaticon.com/128/1261/1261163.png',
+            image: 'assets/images/vector_smart_object_4.png',
           ),
           _CategoryDesign(
             title: 'Saloon',
-            image: 'https://cdn-icons-png.flaticon.com/512/12772/12772533.png',
+            image: 'assets/images/saloon.png',
           ),
           _CategoryDesign(
             title: 'Retail',
-            image: 'https://cdn-icons-png.flaticon.com/512/8539/8539117.png',
+            image: 'assets/images/ic_retail.png',
           ),
           _CategoryDesign(
             title: 'Malls',
-            image: 'https://cdn-icons-png.flaticon.com/512/998/998718.png',
+            image: 'assets/images/mall.png',
           ),
         ],
       ),
@@ -77,10 +76,8 @@ class _CategoryDesign extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network(
+          Image.asset(
             image,
-            height: 40,
-            width: 100,
           ),
           const SizedBox(
             height: 4,

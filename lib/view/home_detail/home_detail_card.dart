@@ -39,7 +39,7 @@ class _HomeCardState extends State<HomeCard> with TickerProviderStateMixin {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SizedBox(
@@ -51,22 +51,22 @@ class _HomeCardState extends State<HomeCard> with TickerProviderStateMixin {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
-                    child: Image.network(
-                      'https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2023-05/BK.jpg',
+                    child: Image.asset(
+                      'assets/images/offer.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
-                    child: Image.network(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUI0A9n9nO3LvrZNXOo250ynr05xNB9q8oIQ&s',
+                    child: Image.asset(
+                      'assets/images/offer.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
-                    child: Image.network(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJETUd0R-OSirrSYO_FcB0oo6QGQUZZT03wg&s',
+                    child: Image.asset(
+                      'assets/images/offer.png',
                       fit: BoxFit.cover,
                     ),
                   )
