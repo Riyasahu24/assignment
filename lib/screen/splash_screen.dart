@@ -1,6 +1,5 @@
 import 'package:assignment/helper/session_helper.dart';
 import 'package:flutter/material.dart';
-import '../utils/app_styles.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
